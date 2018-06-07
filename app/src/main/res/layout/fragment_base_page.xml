@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="9"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+
+            android:text="@string/pls_S_In_Up" />
+
+        <Button
+            android:id="@+id/fb_mang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"
+            android:background="@drawable/loginbutton_selector"
+            android:backgroundTint="#416BC1"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <!-- or -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Or"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <Button
+
+            android:id="@+id/BPSignupWithEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/loginbutton_selector"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="18dp"
+            android:gravity="left|center"
+            android:paddingLeft="45dp"
+            android:text="Sign Up with Email"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/BPcreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/BPSignupWithEmail"
+            android:layout_marginBottom="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/already_user"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/BPLoginNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BPcreateAccount"
+            android:layout_alignBottom="@+id/BPcreateAccount"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/BPcreateAccount"
+            android:layout_toRightOf="@+id/BPcreateAccount"
+            android:textColor="@color/bluoo"
+            android:text="@string/Login"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/BpOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BPLoginNow"
+            android:layout_alignBottom="@+id/BPLoginNow"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/BPLoginNow"
+            android:layout_toRightOf="@+id/BPLoginNow"
+            android:text="Or"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/BpNotNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BpOr"
+            android:layout_alignBottom="@+id/BpOr"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/BpOr"
+            android:layout_toRightOf="@+id/BpOr"
+            android:text="@string/Not_Now"
+            android:textColor="@color/bluoo"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/agreeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="By creating an account you agree to the   "
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/agreeeee"
+            android:layout_toRightOf="@+id/agreeeee"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
